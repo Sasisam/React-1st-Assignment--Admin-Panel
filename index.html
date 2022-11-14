@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="overlay">
+            <img src="./img/preloader.gif" alt="Preloader icon" />
+        </div>
+        
+    <main>
+
+        <div id="table-section">
+
+            <form action="/">
+                <img src='./img/search-icon.svg' alt="Search Icon" />
+                <input type="text" placeholder="Enter something" name="search-box" id="search-box" value="" />
+            </form>
+
+            <div id="table-wrapper">
+
+                <div id="table-headers">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="column1">Id</th>
+                                <th class="column2">FirstName</th>
+                                <th class="column3">LastName</th>
+                                <th class="column4">Email</th>
+                                <th class="column5">Phone</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div id="table-data" >
+                   
+                </div>
+            </div>
+            </div>
+                    <!-- Details box -->
+
+
+                    <div id="info-wrapper">
+                        <h1>Details</h1>
+                        <p>Click on a table item to get detailed information</p>
+                        <div id="info-content">
+                          <div>
+                            <b>User selected:</b> <span id="name"></span>
+                          </div>
+                          <div>
+                            <b>Description: </b>
+                            <textarea id="desc" cols="50" rows="5" readonly>
+                                       
+                            </textarea>
+                          </div>
+                          <div><b>Address:</b> <span id="address"></span></div>
+                          <div><b>City:</b><span id="city"></span></div>
+                          <div><b>State:</b> <span id="state"></span></div>
+                          <div><b>Zip:</b> <span id="zip"></span></div>
+                        </div>
+                      </div>
+
+    </main>
+
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
